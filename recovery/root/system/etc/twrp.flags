@@ -8,6 +8,7 @@
 /proinfo            emmc      /dev/block/by-name/proinfo                   flags=display="Proinfo";backup=1;
 /persist            emmc      /dev/block/by-name/persist                   flags=display="Persist";backup=1;
 /persistent         emmc       /dev/block/by-name/frp                      flags=display="Persistent";backup=1;
+/sec1               emmc       /dev/block/by-name/sec1                     flags=display="Sec1";backup=1;
 
 # Kernel
 /boot               emmc     /dev/block/by-name/boot                       flags=display="Boot";backup=1;slotselect;
