@@ -26,3 +26,45 @@ Features| Fingerprint (side-mounted), accelerometer, proximity, compass
 ## Device picture
 
 ![Redmi 12](https://akm-img-a-in.tosshub.com/aajtak/images/story/202307/redmi_12-sixteen_nine_0.jpg?size=948:533 "Redmi 12")
+
+## How To Build?
+
+First You Need Make Workspace Directory
+---------------
+```bash
+mkdir workdir
+cd workdir
+```
+
+And You Need Clonned Source Pitch Black Recovery Project
+---------------
+```bash
+repo init -u https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-12.1
+```
+
+If You Wan't to shallow clone, which will save even more space, Use This Command
+---------------
+```bash
+repo init --depth=1 -u https://github.com/PitchBlackRecoveryProject/manifest_pb -b android-12.1
+```
+
+###### And Wait Sync Until Completed
+
+You Need Clonned This Device Tree
+---------------
+```bash
+git clone https://github.com/YudhoPatrianto/recovery_device_xiaomi_fire -b 14-pbrp device/xiaomi/fire
+```
+
+Final! Time To Build
+---------------
+```bash
+source build/envsetup.sh
+lunch pb_fire-eng
+mka bootimage -j$(nproc --all)
+```
+
+After Completed You Can Find File In : /workdir/out/target/product/fire/boot.img
+
+
+
