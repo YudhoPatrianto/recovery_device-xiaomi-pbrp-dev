@@ -182,15 +182,9 @@ TW_PREPARE_DATA_MEDIA_EARLY := true
 # Treble
 PB_DISABLE_DEFAULT_TREBLE_COMP := true
 
-# DM Verity
-PB_DISABLE_DEFAULT_DM_VERITY := false
-
 # Libresetprop & resetprop
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
 
 # Handle /data/media
 RECOVERY_SDCARD_ON_DATA := true
-
-# Disable AVB2.0
-PB_DISABLE_DEFAULT_PATCH_AVB2 := true
