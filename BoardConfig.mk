@@ -185,9 +185,6 @@ PB_DISABLE_DEFAULT_TREBLE_COMP := true
 # DM Verity
 PB_DISABLE_DEFAULT_DM_VERITY := false
 
-# Maintainer Flags
-MAINTAINER := 'YudhoPatrianto'
-
 # Libresetprop & resetprop
 TW_INCLUDE_LIBRESETPROP := true
 TW_INCLUDE_RESETPROP := true
