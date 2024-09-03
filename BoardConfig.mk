@@ -191,5 +191,8 @@ TW_INCLUDE_BASH := true
 TW_INCLUDE_NANO := true
 TW_INCLUDE_PYTHON := true
 
+# Busybox
+TW_USE_TOOLBOX := true 
+
 # Handle /data/media
 RECOVERY_SDCARD_ON_DATA := true
